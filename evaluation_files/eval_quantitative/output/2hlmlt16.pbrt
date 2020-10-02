@@ -1,0 +1,184 @@
+Sampler "halton" "integer pixelsamples" [16]
+Integrator "mlt" "integer maxdepth" [5] "integer mutationsperpixel" [16]
+Film "image" "string filename" "2hlmlt16.exr"
+ "integer xresolution" [400] "integer yresolution" [400]
+Scale -1 1 1
+Rotate 87.14754475235159 0.8535588979721069 -0.3284361958503723 0.40443408489227295
+Translate 1.6382300853729248 1.8679211139678955 0.8294622898101807
+Camera "perspective" "float fov" [39.99999883637168]
+
+
+
+
+WorldBegin
+
+AttributeBegin
+	AreaLightSource "diffuse" "rgb L" [ 50.0 50.0 50.0 ]
+	Translate 1 0 -1.2
+	Shape "sphere" "float radius" [.1]
+AttributeEnd
+
+AttributeBegin
+	Material "anisotropicPhong" "rgb Rd" [ 0.03 0.03 0.03 ] "rgb Rs" [.5 .5 .5 ] "float nv" [10.0] "float nu" [10.0] "float cosineweight" [0]
+	Shape "cylinder" "float radius" [.25]
+AttributeEnd
+
+# Name "Plane"
+AttributeBegin
+Texture "checks" "spectrum" "dots"
+	"float uscale" [45] "float vscale" [45]
+	Material "matte" "texture Kd" "checks"
+Shape "trianglemesh"
+  "point3 P" [ 
+	2 2 0
+	-2 2 0
+	-2 2 -4
+	2 2 -4
+]
+  "normal N" [ 
+	0 -1 0
+	0 -1 0
+	0 -1 0
+	0 -1 0
+]
+  "integer indices" [ 
+	0 1 2
+	0 2 3
+	]
+
+AttributeEnd
+
+
+# Name "Plane.001"
+AttributeBegin
+Texture "checks" "spectrum" "dots"
+	"float uscale" [45] "float vscale" [45]
+	Material "matte" "texture Kd" "checks"
+Shape "trianglemesh"
+  "point3 P" [ 
+	2 -2 0
+	-2 -2 0
+	-2 2 0
+	2 2 0
+]
+  "normal N" [ 
+	0 0 -1
+	0 0 -1
+	0 0 -1
+	0 0 -1
+]
+  "integer indices" [ 
+	0 1 2
+	0 2 3
+	]
+
+AttributeEnd
+
+
+# Name "Plane.002"
+AttributeBegin
+Texture "checks" "spectrum" "dots"
+	"float uscale" [45] "float vscale" [45]
+	Material "matte" "texture Kd" "checks"
+
+Shape "trianglemesh"
+  "point3 P" [ 
+	2 -2 0
+	-2 -2 0
+	-2 -2 -4
+	2 -2 -4
+]
+  "normal N" [ 
+	0 -1 0
+	0 -1 0
+	0 -1 0
+	0 -1 0
+]
+  "integer indices" [ 
+	0 1 2
+	0 2 3
+	]
+
+AttributeEnd
+
+
+# Name "Plane.003"
+AttributeBegin
+Texture "checks" "spectrum" "dots"
+	"float uscale" [45] "float vscale" [45]
+	Material "matte" "texture Kd" "checks"
+Shape "trianglemesh"
+  "point3 P" [ 
+	-2 -2 -4
+	-2 -2 0
+	-2 2 0
+	-2 2 -4
+]
+  "normal N" [ 
+	-1 0 0
+	-1 0 0
+	-1 0 0
+	-1 0 0
+]
+  "integer indices" [ 
+	0 1 2
+	0 2 3
+	]
+
+AttributeEnd
+
+
+# Name "Plane.004"
+AttributeBegin
+Texture "checks" "spectrum" "dots"
+	"float uscale" [45] "float vscale" [45]
+	Material "matte" "texture Kd" "checks"
+
+Shape "trianglemesh"
+  "point3 P" [ 
+	2 -2 -4
+	2 -2 0
+	2 2 0
+	2 2 -4
+]
+  "normal N" [ 
+	-1 0 0
+	-1 0 0
+	-1 0 0
+	-1 0 0
+]
+  "integer indices" [ 
+	0 1 2
+	0 2 3
+	]
+
+AttributeEnd
+
+
+# Name "Plane.005"
+AttributeBegin
+Texture "checks" "spectrum" "dots"
+	"float uscale" [45] "float vscale" [45]
+	Material "matte" "texture Kd" "checks"
+Shape "trianglemesh"
+  "point3 P" [ 
+	2 -2 -4
+	-2 -2 -4
+	-2 2 -4
+	2 2 -4
+]
+  "normal N" [ 
+	0 0 -1
+	0 0 -1
+	0 0 -1
+	0 0 -1
+]
+  "integer indices" [ 
+	0 1 2
+	0 2 3
+	]
+
+AttributeEnd
+
+
+WorldEnd
