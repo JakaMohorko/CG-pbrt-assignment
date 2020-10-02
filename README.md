@@ -10,17 +10,17 @@ The code additions to the pbrt-v3 engine are present in the pbrt-v3 folder. To a
 
 evaluation_files contains all files used for the projects evaluation and analysis, detailed in CGReport.pdf
 
-###### evaluation1-4.pbrt  
+#### evaluation1-4.pbrt  
 
 Scenes 1-4 used for evaluation. The .png and .exr images are renderings of those .pbrt files.
 
-###### BRDF_test_image
+#### BRDF_test_image
 
 Contains .pbrt files and renders used to generate the Figure 1 from the BRDF paper.
 
 The render_test.py script generates all of the images.
 
-###### eval_quality
+#### eval_quality
 
 Contains the files used for the qualitative evaluation.
 
@@ -31,7 +31,7 @@ The crops folder contains cropped regions of the images which exhibit interestin
 
 render_qualitative.py renders all of the .png images using the .pbrt files.
 
-###### eval_quantitative  
+#### eval_quantitative  
 
 Contains the files used for the quantitative evaluation.
 
@@ -48,10 +48,10 @@ Relevant reference .exr images from the references folder are used.
 
 In the references folder the create_references.py script generates the .exr reference images.
 					
-###### importance_sampling
+#### importance_sampling
 
 Contains .pbrt files and images showcasing the test image with/without importance sampling.
 
-###### sampler_comparison
+#### sampler_comparison
 
 Contains Scene 3 images generated using different samplers, as well as the corresponding .pbrt files.
