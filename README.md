@@ -8,7 +8,7 @@ The code additions to the pbrt-v3 engine are present in the pbrt-v3 folder. To a
 
 ## Evaluation
 
-evaluation_files contains all files used for the projects evaluation and analysis, detailed in CGReport.pdf
+evaluation_files contains all files used for the projects evaluation and analysis, detailed in CGReport.pdf. The report also contains all usage instructions and parameters available to configure the material and sampling methods.
 
 #### evaluation1-4.pbrt  
 
